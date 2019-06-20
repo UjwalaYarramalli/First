@@ -1,0 +1,20 @@
+pipeline
+{
+	agent any
+	stages
+	 {
+	stage('build')
+{
+steps
+{ echo('Pipeline build demo')
+}
+	}
+	stage('input')
+{
+steps
+{
+input('Do you want to proceed')
+}
+}
+}
+}
